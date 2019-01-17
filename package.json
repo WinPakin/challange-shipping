@@ -15,7 +15,7 @@
     "express-html": "^1.0.1",
     "express-session": "^1.15.6",
     "multer": "^1.4.0",
-    "socket.io": "^1.7.3",
+    "socket.io": "^2.2.0",
     "unix-timestamp": "^0.2.0"
   }
 }

@@ -218,10 +218,8 @@ io.on('connection', function(socket){
 	console.log("connected");
 	socket.on('subscribe', function(msg){	
 	 let idLst = JSON.stringify(msg);
-	 console.log(idLst);
 	 for(let el of getAllOrders()){
 		 if(idLst.includes(el.productId)){
-			console.log(el.productId);
 			io.emit('order', JSON.stringify(el));
 		 }
 	 }
